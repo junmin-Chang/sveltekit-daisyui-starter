@@ -1,7 +1,7 @@
 <script>
 
   import Footer from "../components/Footer.svelte";
-import Navbar from "../components/Navbar.svelte";
+  import Drawer from "../components/Drawer.svelte";
 
 </script>
 <style>
@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar.svelte";
     @tailwind components;
     @tailwind utilities;
 </style>
-<Navbar/>
-<slot/>
+<Drawer>
+  <slot/>
+</Drawer>
 <Footer/>

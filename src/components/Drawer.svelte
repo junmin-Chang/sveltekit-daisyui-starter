@@ -1,7 +1,9 @@
 <div class="drawer drawer-mobile">
+  
   <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col items-center justify-center">
+  <div class="border-l drawer-content flex flex-col items-center justify-center">
     <!-- Page content here -->
+    <slot/>
 
     <label for="my-drawer-2" class="swap swap-rotate fixed top-4 right-4 btn btn-circle btn-ghost lg:hidden">
       <!-- this hidden checkbox controls the state -->
@@ -16,6 +18,11 @@
     <label for="my-drawer-2" class="drawer-overlay"></label> 
     <ul class="menu p-4 w-80 bg-base-100 text-base-content">
       <!-- Sidebar content here -->
+      <a href="/" class="mb-6">
+        <li data-theme="wireframe">
+          <img src="logo.svg"/>
+        </li>  
+      </a>
       <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li>
       <li><a>Sidebar Item 3</a></li>
