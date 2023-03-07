@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"daisyui": "^2.51.3"
+		"daisyui": "^2.51.3",
+		"mongodb": "^5.1.0"
 	}
 }
