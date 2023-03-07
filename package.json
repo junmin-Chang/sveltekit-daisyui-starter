@@ -23,6 +23,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@auth/core": "^0.5.1",
+		"@auth/sveltekit": "^0.3.0",
 		"daisyui": "^2.51.3",
 		"mongodb": "^5.1.0"
 	}
