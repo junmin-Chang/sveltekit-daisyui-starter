@@ -7,7 +7,7 @@
           <p>Please login to use our service</p>
           <div class="card-actions justify-end">
             <!-- social buttons -->
-            <button class="btn btn-primary">Listen</button>
+            <a href="/auth/signin">LOGIN VIA GITHUB</a>
           </div>
         </div>
       </div>

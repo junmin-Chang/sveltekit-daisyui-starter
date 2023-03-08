@@ -9,6 +9,10 @@
     @tailwind components;
     @tailwind utilities;
 </style>
+
+<svelte:head>
+  <title>노잉</title>
+</svelte:head>
 <Drawer>
   <slot/>
 </Drawer>
