@@ -1,3 +1,6 @@
+<script>
+  import { page } from "$app/stores";
+</script>
 
 <div id="container" class="container h-full flex flex-col p-4 justify-center items-center">
     <div class="card lg:card-side bg-base-100 shadow-xl">

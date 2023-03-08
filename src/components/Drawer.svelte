@@ -1,3 +1,10 @@
+<script lang="ts">
+  import type { DefaultSession } from "@auth/core/types";
+
+
+  export let user: DefaultSession["user"]
+</script>
+
 <div class="drawer drawer-mobile">
   
   <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
@@ -23,10 +30,14 @@
           <img src="logo.svg"/>
         </li>  
       </a>
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
-      <li><a>Sidebar Item 3</a></li>
-      <li><a>Sidebar Item 4</a></li>
+      <li><a href="/">홈</a></li>
+      <li><a href={`/${user?.name}`}>프로필</a></li>
+      {#if user}
+        <li><a href="/auth/signout">로그아웃</a></li>
+      {:else}
+        <li><a href="/login">로그인</a></li>
+      {/if}
+
     </ul>
   </div>
 </div>
