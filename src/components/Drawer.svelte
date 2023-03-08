@@ -1,7 +1,5 @@
 <script lang="ts">
   import type { DefaultSession } from "@auth/core/types";
-
-
   export let user: DefaultSession["user"]
 </script>
 

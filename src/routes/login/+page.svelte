@@ -1,5 +1,5 @@
-<script>
-  import { page } from "$app/stores";
+<script lang="ts">
+
 </script>
 
 <div id="container" class="container h-full flex flex-col p-4 justify-center items-center">
