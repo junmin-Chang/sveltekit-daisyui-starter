@@ -29,7 +29,7 @@
         </li>  
       </a>
       <li><a href="/">홈</a></li>
-      <li><a href={`/${user?.name}`}>프로필</a></li>
+      <li><a href={`/profile/z00mni`}>프로필</a></li>
       {#if user}
         <li><a href="/auth/signout">로그아웃</a></li>
       {:else}
