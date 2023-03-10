@@ -6,11 +6,13 @@
     <div class="card lg:card-side bg-base-100 shadow-xl">
         <figure><img src="logo.svg" alt="logo"/></figure>
         <div class="card-body">
-          <h2 class="card-title">Login</h2>
-          <p>Please login to use our service</p>
-          <div class="card-actions justify-end">
+          <h2 class="card-title">로그인</h2>
+          <p>서비스를 이용하시려면 로그인이 필요합니다.</p>
+          <div class="card-actions justify-center">
             <!-- social buttons -->
-            <a href="/auth/signin">LOGIN VIA GITHUB</a>
+            <a href="/auth/signin">
+              <button class="btn btn-md mt-4">소셜 계정으로 로그인하기</button>
+            </a>
           </div>
         </div>
       </div>

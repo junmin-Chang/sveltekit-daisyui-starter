@@ -1,7 +1,7 @@
 <script>
 
-  import Footer from "../components/Footer.svelte";
-  import Drawer from "../components/Drawer.svelte";
+  import Footer from "../lib/Footer.svelte";
+  import Drawer from "../lib/Drawer.svelte";
   export let data;
 </script>
 <style>
