@@ -1,5 +1,5 @@
 <script lang="ts">
-
+  import { signIn } from '@auth/sveltekit/client'
 </script>
 
 <div id="container" class="container h-full flex flex-col p-4 justify-center items-center">
@@ -10,9 +10,11 @@
           <p>서비스를 이용하시려면 로그인이 필요합니다.</p>
           <div class="card-actions justify-center">
             <!-- social buttons -->
-            <a href="/auth/signin">
-              <button class="btn btn-md mt-4">소셜 계정으로 로그인하기</button>
-            </a>
+       
+              <button 
+              on:click={() => signIn('github')}
+              class="btn btn-md mt-4">소셜 계정으로 로그인하기</button>
+        
           </div>
         </div>
       </div>

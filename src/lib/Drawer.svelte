@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { DefaultSession } from "@auth/core/types";
+  import { signOut } from "@auth/sveltekit/client";
   export let user: DefaultSession["user"]
 </script>
 
@@ -29,9 +30,9 @@
         </li>  
       </a>
       <li><a href="/">홈</a></li>
-      <li><a href={`/profile/z00mni`}>프로필</a></li>
+      <li><a href={`/${user?.name}`}>프로필</a></li>
       {#if user}
-        <li><a href="/auth/signout">로그아웃</a></li>
+        <li><button on:click={() => signOut()}>로그아웃</button></li>
       {:else}
         <li><a href="/login">로그인</a></li>
       {/if}
