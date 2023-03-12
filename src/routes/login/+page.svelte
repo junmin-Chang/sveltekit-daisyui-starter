@@ -11,10 +11,13 @@
           <div class="card-actions justify-center">
             <!-- social buttons -->
        
+            <a href="/auth/signin">
               <button 
-              on:click={() => signIn('github')}
+              
               class="btn btn-md mt-4">소셜 계정으로 로그인하기</button>
         
+            </a>
+             
           </div>
         </div>
       </div>

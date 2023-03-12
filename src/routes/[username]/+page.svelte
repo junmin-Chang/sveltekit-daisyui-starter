@@ -1,5 +1,6 @@
 <script lang="ts">
     export let data;
+    console.log(data.session)
 </script>
 
 <p>{data.session?.user?.name}</p>
